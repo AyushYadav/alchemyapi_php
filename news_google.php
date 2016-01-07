@@ -25,10 +25,10 @@
 			$related_news = (isset($news_primary->relatedStories)?$news_primary->relatedStories : false); 
 			if($related_news){
 				foreach($related_news as $sec_news){			//Traversing the subtree for related news
-					echo "Title : " , $news_primary->titleNoFormatting ,PHP_EOL;
-					echo "Pulisher : " , $news_primary->publisher,PHP_EOL;
-					echo "Published Date : " , $news_primary->publishedDate,PHP_EOL;
-					echo "URL : ", $news_primary->unescapedUrl,PHP_EOL;
+					echo "Title : " , $sec_news->titleNoFormatting ,PHP_EOL;
+					echo "Pulisher : " , $sec_news->publisher,PHP_EOL;
+					echo "Published Date : " , $sec_news->publishedDate,PHP_EOL;
+					echo "URL : ", $sec_news->unescapedUrl,PHP_EOL;
 					print PHP_EOL;
 				}
 			}
