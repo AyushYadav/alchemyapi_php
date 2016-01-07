@@ -16,7 +16,7 @@
 */
 
 	require_once 'alchemyapi.php';
-	$alchemyapi = new AlchemyAPI();
+	$alchemyapi = new AlchemyAPI(); //put in the API key in the function as parameter to make it work 'API-KEY'
 	
 
 	$demo_text = 'Yesterday dumb Bob destroyed my fancy iPhone in beautiful Denver, Colorado. I guess I will have to head over to the Apple Store and buy a new one.';
